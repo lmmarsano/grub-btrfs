@@ -80,6 +80,16 @@ Default: “true”
 .IP \(em 4
 Example: \fCGRUB_BTRFS_SHOW_SNAPSHOTS_FOUND="false"\fP
 
+.SS "\fCGRUB_BTRFS_CMDLINE_LINUX\fP"
+.PP
+Additional space-separated kernel command line parameters to be used when booting a snapshot.
+Combines with \fCGRUB_CMDLINE_LINUX\fP \fCGRUB_CMDLINE_LINUX_DEFAULT\fP.
+NB: Do NOT include parameters kernel file path, \fCroot\fP, or \fCrootflags\fP here.
+.IP \(em 4
+Default: “”
+.IP \(em 4
+Example: \fCGRUB_BTRFS_CMDLINE_LINUX="systemd.volatile=overlay"\fP
+
 .SS "\fCGRUB_BTRFS_ROOTFLAGS\fP"
 .PP
 Comma seperated mount options to be used when booting a snapshot.

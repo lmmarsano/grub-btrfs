@@ -57,6 +57,13 @@ Show snapshots found during run "grub-mkconfig"
 - Default: "true"
 - Example: ~GRUB_BTRFS_SHOW_SNAPSHOTS_FOUND="false"~
 
+*** ~GRUB_BTRFS_CMDLINE_LINUX~
+Additional space-separated kernel command line parameters to be used when booting a snapshot.
+Combines with ~GRUB_CMDLINE_LINUX~ ~GRUB_CMDLINE_LINUX_DEFAULT~.
+NB: Do NOT include parameters kernel file path, ~root~, or ~rootflags~ here.
+- Default: ""
+- Example: ~GRUB_BTRFS_CMDLINE_LINUX="systemd.volatile=overlay"~
+
 *** ~GRUB_BTRFS_ROOTFLAGS~
 Comma seperated mount options to be used when booting a snapshot.
 They can be defined here as well as in the "/" line inside the respective snapshots'
